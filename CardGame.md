@@ -1,3 +1,5 @@
+## Black Jack
+
 1. Tools (cards)  
 2. Rules  
 
@@ -55,6 +57,14 @@ class BlackJackPlayer extends Player {
   @Override
   public int getScore() {
     // Apply rules of Black Jack
+  }
+  
+  public boolean bust() {
+    int score = getScore();
+    if (score > 21)
+      return true;
+    else
+      return false;
   }
 }
 ```
