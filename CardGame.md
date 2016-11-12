@@ -3,6 +3,8 @@
 1. Tools (cards)  
 2. Rules  
 
+actions will be methods;  
+status will be attributes;  
 
 ```
 class Card {
@@ -10,8 +12,8 @@ class Card {
   private final int num;  // Use 1 to 13 represent A to K
   private String color;
 }
-
-
+```
+```
 class Deck {
   private int totalNumber;
   
@@ -38,8 +40,8 @@ class Deck {
     return remainingCards() == ? null : cards.get(dealtIndex++);
   }
 }
-
-
+```
+```
 class Player {
   private List<Card> cards = new ArrayList<>();
   
@@ -57,7 +59,7 @@ class BlackJackPlayer extends Player {
   @Override
   public int getScore() {
     // Apply rules of Black Jack
-  }
+  } 
   
   public boolean bust() {
     int score = getScore();
@@ -66,5 +68,28 @@ class BlackJackPlayer extends Player {
     else
       return false;
   }
+}
+```
+# Simple implementation
+Deal cards automatically when points are less than 16.  
+
+```
+class BlackJackSimulation {
+  private Deck deck;
+  Player[] players;
+  
+  // 1
+  shuffle();
+  // 2
+  initialDeal();
+  // 3
+  for (each player)    // need this?
+    dealHand
+  for (each player)
+    while (!checkPlayer) 
+      dealCard
+    getScore
+  
+  
 }
 ```
