@@ -1,8 +1,8 @@
 ## Abstract Factory
 ##### Layers/complexity:
-1. Family manufacturer: One method for each component (like this)
-2. Local factory: One class for each component 
-3. Modern factory: Multiple classes for each component
+1. Factory method: One method for each component (like this), a family manufacturer. Easy, single-purpose. 
+2. Factory class: One class for each component, a town factory. Medium scale, one kind of products. 
+3. Abstract factory: Multiple classes for each component, a modern factory. Complex, many different kind of relevant products. 
 
 ```
 /**
